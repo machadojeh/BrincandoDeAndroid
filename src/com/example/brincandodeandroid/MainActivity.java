@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -72,6 +73,7 @@ public class MainActivity extends Activity {
 		 for(int i = 0; i < 3; i++) {
 	         CheckBox ch = new CheckBox(getApplicationContext());
 	         ch.setText("Opção "+(i+1));
+	         ch.setTextColor(Color.BLACK);
 	         ch.setId(i);
 	         ch.setButtonDrawable(R.drawable.checkbox_selector2);
 	         
